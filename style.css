@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HUD */
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+  z-index: 10;
+}
+
+#hud div {
+  margin-bottom: 4px;
+}
+
+/* Overlay for Game Over */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  z-index: 999;
+  flex-direction: column;
+  text-align: center;
+}
+
+#overlay h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+#overlay p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+#overlay button {
+  padding: 12px 24px;
+  font-size: 1.1em;
+  background: #ffc107;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#overlay button:hover {
+  background: #e0a800;
+}
